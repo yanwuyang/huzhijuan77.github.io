@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>huzhijuan.cn</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div id="index">
+			<div class="main case">
+				<div id="tabMain">
+					<ul>
+						<li class="cur">生源闪购</li>
+						<li>阅购网</li>
+						<li>悦成时代</li>
+						<li>OA管理系统</li>
+						<li>全国中药流通平台</li>
+						<li>中国直销行业协会</li>
+					</ul>
+					<div class="container">
+						<div class="content cur">
+							<h3>生源闪购</h3>
+							<p style="text-align: center;"><img src="img/case-01.jpg"></p>
+							<section class="postContent">
+								<p>项目描述</p>
+								<p>移动端：<a href="http://m.shengyuan.cn">http://m.shengyuan.cn<br/>
+								PC端：<a href="http://www.shengyuan.cn">http://www.shengyuan.cn</a></p>
+								<p>郴州市内首家网上超市着力于为郴州本土打造一个身边的网上超市，在互联网时代倡导时尚、便捷、健康的e生活</p>
+								<p>开发工具<br/>Hbuilder+WebStrom</p>
+								<p>项目职责</p>
+								<p>这个项目我主要负责移动端网页开发和优化方面的工作，主要负责生源闪购触屏版首页模块，订单模块，购物车模块开发，专题活动页面开发。</p>
+							</section>
+						</div>
+						<div class="content">
+							<h3>阅购网</h3>
+							<p style="text-align: center;"><img src="img/case-02.jpg"></p>
+							<section class="postContent">
+								<p>项目描述</p>
+								<p>PC端：<a href="http://www.yegou.com">http://www.yegou.com/</a></p>
+								<p>阅购网-阅购网作为B2B2C、B2F2B、O2O等模式相结合的新型电子商务模式的代表，在全球专业门户网站排名已进入万名内。</p>
+								<p>开发工具<br/>Hbuilder+Dreamweaver</p>
+								<p>项目职责</p>
+								<p>负责阅购网整站所有页面的切图开发，以及js效果的实现 。</p>
+							</section>
+						</div>
+						<div class="content">
+							<h3>悦成时代</h3>
+							<p style="text-align: center;"><img src="img/case-03.jpg"></p>
+							<section class="postContent">
+								<p>项目描述</p>
+								<p>PC端：<a href="http://www.yuechengshidai.com">http://www.yuechengshidai.com/</a></p>
+								<p>公司官网</p>
+								<p>开发工具<br/>Hbuilder+Dreamweaver</p>
+								<p>项目职责</p>
+								<p>官网页面原型设计及前端页面切图js效果实现</p>
+							</section>
+						</div>
+						<div class="content">
+							<h3>悦成时代OA管理系统</h3>
+							<p style="text-align: center;"><img src="img/case-03.jpg"></p>
+							<section class="postContent">
+								<p>项目描述</p>
+								<p>公司OA管理系统</p>
+								<p>开发工具<br/>Hbuilder+Dreamweaver</p>
+								<p>项目职责</p>
+								<p>OA系统UI设计及前端页面制作和开发</p>
+							</section>
+						</div>
+						<div class="content">
+							<h3>全国中药现代流通公共平台</h3>
+							<section class="postContent">
+								<p>项目描述</p>
+								<p>全国中药现代流通系统-政府项目</p>
+								<p>开发工具<br/>Hbuilder+Dreamweaver</p>
+								<p>项目职责</p>
+								<p>因为是在中期加入该项目组，因此我在这个项目中主要负责进行优化方面的工作。</p>
+							</section>
+						</div>
+						<div class="content">
+							<h3>中国直销行业协会</h3>
+							<section class="postContent">
+								<p>项目描述</p>
+								<p>中国直销行业协会-政府项目</p>
+								<p>开发工具-WebStrom</p>
+								<p>项目职责</p>
+								<p>因为是在中期加入该项目组，因此我在这个项目中主要负责进行优化方面的工作。</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--<script type="text/javascript" src="js/DOM.js" ></script>-->
+<script type="text/javascript">
+	var oTab=document.getElementById("tabMain");
+	var aLi=oTab.getElementsByTagName('ul')[0].getElementsByTagName("li");
+	var oDivs=oTab.getElementsByTagName("div")[0].getElementsByTagName("div");
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].index=i;
+		aLi[i].onclick=function(){
+			for (var i=0; i<aLi.length; i++) {
+				aLi[i].className="";			
+				oDivs[i].className="content";
+			}
+			aLi[this.index].className="cur";
+			oDivs[this.index].className="content cur";
+		}		
+	}
+</script>

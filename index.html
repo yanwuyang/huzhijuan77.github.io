@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>huzhijuan.cn</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/fullPage.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.easings.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+	</head>
+	<body>
+		<div id="fullpage">
+			<div class="main section">
+				<h2><img src="img/3.jpg"></h2>
+				<p class="psTitle cen">Hu Zhijuan</p>
+				<p class="motto animated rubberBand">不忘初心 方得始终</p>
+				<p class="bTit">嗨，我是胡志娟，一名前端开发者，现居北京，正在修行探求创意之源......</p>
+				<p class="nav"><a href="javascript:;">经历</a><a href="javascript:;">项目</a><a href="javascript:;">关于</a></p>
+				<i class="icon animated flash infinite"></i>
+			</div>
+			<div class="section">
+				<iframe style="width:100%;height:100%" src="resume.html"></iframe>
+			</div>
+			<div class="section">
+				<iframe style="width:100%;height:100%" src="case.html"></iframe>
+			</div>
+			<div class="section">
+				<iframe style="width:100%;height:100%" src="about.html"></iframe>
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+    			$('#fullpage').fullpage({
+    				loopBottom : true,
+    				navigation : true,
+    				keyboardScrolling : false
+//  				afterLoad:function(a,i){
+//  					if(i==4){
+//  						$('#if').get(0).focus();
+//  					}
+//  				}
+    			});
+			});
+		</script>
+	</body>
+</html>
